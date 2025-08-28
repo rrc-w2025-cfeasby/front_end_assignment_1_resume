@@ -5,15 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
-    <header>
+    <header role="banner">
         <img src="images/chris_feasby.png" alt="Chris Feasby">
 
         <h1>Chris Feasby</h1>
         <p>Software Developer</p>
     </header>
     <body>
-        <main>
-            <section class="contact_info">
+        <main role="main">
+            <section class="contact_info" role="contentinfo">
                 <h3>Contact Information</h3>
                 <ul>
                     <li><b>Phone:</b>(204)997-9918</li>
@@ -23,14 +23,14 @@
                     <li><b>LinkedIn:</b><a href="https://linkedin.com/in/chrisfeasby" target="_blank" rel="noopener noreferrer">linkedin.com/in/chrisfeasby</a></li>
                 </ul>
             </section>
-            <section class="about_me">
+            <section class="about_me" role="aboutme">
                 <h3>About Me</h3>
                 <p>
                     I'm Chris, I am a very hard working software developer with a passion to create. With experience in both BIT Program (2019-2021) and a 
                     current student in AD&D Program (2025-2027) I am very skilled at getting tech working!
                 </p>
             </section>
-            <section class="skills">
+            <section class="skills" role="skills">
                 <h3>Skills</h3>
                 <ul>
                     <li>HTML</li>
@@ -48,14 +48,14 @@
                     <li>Raspberry Pi and Arduino and sensors</li>
                 </ul>
             </section>
-            <section class="experience">
+            <section class="experience" role="experience">
                 <h3>Experience</h3>
                 <ul>
                     <li><b>Bit Space Development</b> - Python Developer, 2021-2022</li>
                     <li><b>CF Computing</b> - IT Support Specialist, 2012-2020</li>
                 </ul>
             </section>
-            <section class="education">
+            <section class="education" role="education">
                 <h3>Education</h3>
                 <ul>
                     <li><b>Red River College</b> - Diploma w/honours in Application Development &amp; Delivery, 2025-2027 (expected)</li>
@@ -64,7 +64,7 @@
                     <li><b>Patal Vocational College</b> - Certificate PC Service Technician/Network Management, 2013-2014</li>
                 </ul>
             </section>
-            <section class="projects">
+            <section class="projects" role="projects">
                 <h3>Projects</h3>
                 <ul>
                     <li><b>Whack a Mole</b> - Create a Raspberry Pi game using PyGame and Python</li>
@@ -74,7 +74,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="interests">
+            <section class="interests" role="interests">
                 <h3>Interests</h3>
                 <ul>
                     <li>Gaming</li>
@@ -86,12 +86,14 @@
                     <li>C++ Programming always a fan</li>
                 </ul>
             </section> 
-            <svg width="200" height="200">
-                <image href="/images/c_plus_logo.jpg" title="C++ Logo" width="200" height="200"/>
+            <svg width="200" height="200" role="img" aria-labelledby="svgTitle svgDesc">
+                <title id="svgTitle">C++ Logo</title>
+                <desc id="svgDesc">A logo of the C++ Programming Language Symbol</desc>
+                <image href="/images/c_plus_logo.jpg" width="200" height="200"/>
             </svg>
         </main>
     </body>
-    <footer>
+    <footer role="authorcopyright">
         <p>© 2025 Chris Feasby. All rights reserved.</p>
     </footer>
 </html>
